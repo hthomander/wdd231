@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Wdd 231 Course Home Page by Hazel Beth">
+    <meta name="author" content="Hazel Beth Thomander">
+    <title>WDD 231 - Course Home</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/myphoto.jpg" alt="Hazel Beth">
+        <span>Hazel Beth Thomander</span>
+    </header>
+    <nav>
+        <button id="menu-toggle" class="hamburger">☰</button>
+        <ul id="menu" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://github.com/hthomander">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/hazelbeth">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="content-container">
+        <section class="column">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="column">
+            <h2>Burley, Idaho</h2>
+            <img src="images/burleypic.jpg" alt="Train Bridge Overlooking the Snake River in Burley Idaho">
+            <p>Train bridge overlooking the Snake River in Beautiful Burley Idaho!</p>
+        </div>
+        </section>
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <button id="all">All Courses</button>
+            <button id="wdd">WDD Courses</button>
+            <button id="cse">CSE Courses</button>
+            <div id="courses"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Hazel Beth Thomander - Burley, Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,325 @@
+:root {
+    --background-color: #f4f1e1;
+    --header-footer-bg: #9e6a55;
+    --button-bg: #e37b53;
+    --cloud-white: #FFFFFF;
+    --accent-color: #b5693f;
+    --text-color: #4a3a33;
+    --link-color: #9e6a55;
+    --link-hover-color: #ffb958;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display:  flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--header-footer-bg);
+    color: var(--text-color);
+}
+
+header img {
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--link-hover-color);
+    border-radius: 5px;
+}
+
+#menu {
+    display: flex;
+}
+
+.hidden {
+    display:none;
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+}
+
+.column h2 {
+    background-color: var(--header-footer-bg);
+    padding: 15px;
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.filter-buttons {
+    margin-top: 20px;
+}
+
+#certificate {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#certificate h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--button-bg);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0 , 0, 0.1);
+}
+
+.completed {
+    background-color: #d4edda;
+    border-left: 5px solid #155724;
+    color: var(--text-color);
+}
+
+.not-completed {
+    color: var(--text-color);
+    background-color: #f8d7da;
+    border-left: 5px solid #721c24;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-bg);
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--header-footer-bg);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    header span {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    nav {
+        padding: 10px 20px;
+        position: relative; 
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--accent-color);
+        position: absolute;
+        top: 50px; 
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 15px 20px;
+        text-align: center;
+        border-bottom: 1px solid white;
+        font-size: 1.1rem;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--link-hover-color);
+    }
+
+    .content-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .column {
+        flex: 1;
+        min-width: 100%;
+        padding: 0 15px;
+        margin: 10px 0;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .course-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .filter-buttons button {
+        margin: 10px 5px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    #certificate {
+        text-align: center;
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #year, #lastModified {
+        font-size: 0.9rem;
+    }
+}
