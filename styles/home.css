@@ -65,7 +65,11 @@ nav ul li a:hover {
 }
 
 #menu {
-    display: flex;
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .hidden {
@@ -81,7 +85,11 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-#menu-toggle {
+#menu {
+    display: flex;
+}
+
+.hidden {
     display: none;
 }
 
@@ -255,11 +263,22 @@ footer {
         z-index: 1;
     }
 
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--accent-color);
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+    
     nav ul.show {
         display: flex;
     }
 
     nav ul li a {
+        display: none;
         padding: 15px 20px;
         text-align: center;
         border-bottom: 1px solid white;
