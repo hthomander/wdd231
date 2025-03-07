@@ -90,14 +90,16 @@ function displayCourses(filter = "all") {
     } else {
         filteredCourses = courses;
     }
-
-    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    
+const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
 
     coursesDiv.innerHTML =`
+    <p> Total Credits: ${totalCredits}</p>
     <div class="course-list">
          ${filteredCourses.map(course => `
             <div class="course-card ${course.completed ? 'completed' : 'not-completed'}">
                 <h3>${course.subject} ${course.number}</h3>
+                <p> Credits: ${course.credits} </p>
             </div>
         `).join('')}
     </div>
