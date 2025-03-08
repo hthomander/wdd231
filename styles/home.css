@@ -69,23 +69,11 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-#menu {
-    display: flex;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%
 
-}
-
-#menu.show {
+nav ul.show {
     display: flex;
     flex-direction: column;
     background-color: var(--accent-color);
-}
-
-.hidden {
-    display:none;
 }
 
 .hamburger {
@@ -98,16 +86,15 @@ nav ul li a:hover {
 }
 
 
-.hidden {
-    display: none;
-}
-
 .content-container {
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
      gap: 20px;
      flex-wrap: wrap;
+     margin-bottom: 20px;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .column {
@@ -120,6 +107,13 @@ nav ul li a:hover {
     padding: 15px;
     width: 48%;
     min-height: 600px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.column:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .column:nth-child(2) {
@@ -298,7 +292,7 @@ footer {
     }
 
     nav ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 100%;
         background-color: var(--accent-color);
@@ -307,12 +301,8 @@ footer {
         left: 0;
     }
 
-    #menu {
-        display: none;
-        width: 100%;
-    }
     
-    #menu.show {
+    nav ul.show {
         display: flex;
         flex-direction: column;
     }
