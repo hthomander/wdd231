@@ -137,7 +137,7 @@ nav ul li a:hover {
 
 .column ul li {
     display: list-item;
-    word-break: break-word;
+    overflow-wrap: break-word;
     white-space: normal;
     padding: 5px 0;
 }
@@ -331,7 +331,7 @@ footer {
     }
 
     h1 {
-        font-size: 1.;
+        font-size: 1.1rem;
     }
 
     .content-container {
@@ -367,7 +367,7 @@ footer {
     .column ul li {
         padding: 5px 0;
         font-size: 1.1rem;
-        word-break: break-word;
+        overflow-wrap: break-word;
         white-space: normal;
     }
 
