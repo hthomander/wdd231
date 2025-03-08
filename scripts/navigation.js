@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(menu);
 
 menuToggle.addEventListener("click", function () {
-    console.log("Hamburger button clicked!");
     menu.classList.toggle("show");
     
 });
