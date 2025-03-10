@@ -1,0 +1,29 @@
+{
+    "family_name": "Smith",
+    "moveInDate": "2025-03-01",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "John Smith",
+            "gender": "Male",
+            "birthdate": "1969-04-04"
+        },
+        {
+            "name": "Jane Smith",
+            "gender": "Female",
+            "birthdate": "1970-09-23"
+        },
+        {
+            "name": "Emma Smith",
+            "gender": "Female",
+            "birthdate": "2015-04-10"
+        },
+        {
+            "name": "Liam Smith",
+            "gender": "Male",
+            "birthdate": "2018-11-30"
+        }
+    ]
+
+}
