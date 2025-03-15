@@ -1,59 +1,59 @@
 {
     "members": [
         {
-            "name": "Let's Go Dutch",
-            "address": "1",
-            "phone": "",
-            "website": "htt",
-            "image": "s",
-            "membership": "3"
+            "name": "Heyburn Coffee House",
+            "address": "456 Main St, Heyburn, ID",
+            "phone": "(208) 555-5678",
+            "website": "https://heyburncoffee.com",
+            "image": "heyburncoffee.jpg",
+            "membership": "2"
+        },
+        {
+            "name": "Snake River Adventures",
+            "address": "789 Lakeview Dr, Heyburn, ID",
+            "phone": "(208) 555-9876",
+            "website": "https://snakeriveradventures.com",
+            "image": "snakeriver.jpg",
+            "membership": "1"
         },
         {
             "name": "Let's Go Dutch",
-            "address": "1",
-            "phone": "",
-            "website": "htt",
-            "image": "s",
+            "address": "123 Summit Ave, Heyburn, ID",
+            "phone": "(208) 555-1234",
+            "website": "https://letsgodutch.com",
+            "image": "letsgodutch.jpg",
             "membership": "3"
         },
         {
-            "name": "Let's Go Dutch",
-            "address": "1",
-            "phone": "",
-            "website": "htt",
-            "image": "s",
+            "name": "Heyburn Outdoor Gear",
+            "address": "456 River Rd, Heyburn, ID",
+            "phone": "(208) 555-5678",
+            "website": "https://heyburnoutdoors.com",
+            "image": "heyburnoutdoor.jpg",
+            "membership": "2"
+        },
+        {
+            "name": "Rustic Home Furnishings",
+            "address": "789 Main St, Heyburn, ID",
+            "phone": "(208) 555-9012",
+            "website": "https://rustichome.com",
+            "image": "rustichome.jpg",
             "membership": "3"
         },
         {
-            "name": "Let's Go Dutch",
-            "address": "1",
-            "phone": "",
-            "website": "htt",
-            "image": "s",
-            "membership": "3"
+            "name": "The Blooming Daisy Florist",
+            "address": "321 Floral Ln, Heyburn, ID",
+            "phone": "(208) 555-3456",
+            "website": "https://bloomingdaisy.com",
+            "image": "bloomingdaisy.jpg",
+            "membership": "2"
         },
         {
-            "name": "Let's Go Dutch",
-            "address": "1",
-            "phone": "",
-            "website": "htt",
-            "image": "s",
-            "membership": "3"
-        },
-        {
-            "name": "Let's Go Dutch",
-            "address": "1",
-            "phone": "",
-            "website": "htt",
-            "image": "s",
-            "membership": "3"
-        },
-        {
-            "name": "Let's Go Dutch",
-            "address": "1",
-            "phone": "",
-            "website": "htt",
-            "image": "s",
+            "name": "Tech Haven Electronics",
+            "address": "987 Innovation Dr, Heyburn, ID",
+            "phone": "(208) 555-7890",
+            "website": "https://techhaven.com",
+            "image": "techhaven.jpg",
             "membership": "3"
         }
 
