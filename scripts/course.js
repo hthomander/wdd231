@@ -98,7 +98,7 @@ const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credit
     <p> Total Credits: ${totalCredits}</p>
     <div class="course-list">
          ${filteredCourses.map(course => `
-            <div class="course-card ${course.completed ? 'completed' : 'not-completed'}">
+            <div class="course-card ${course.completed ? 'completed' : 'not-completed'}" data-id="${course.subject}-${course.number}">
                 <h3>${course.subject} ${course.number}</h3>
                 <p> Credits: ${course.credits} </p>
             </div>
@@ -108,10 +108,17 @@ const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credit
 
     document.querySelectorAll(".course-card").forEach(card => {
         card.addEventListener("click", () => {
-            const courseID = card.getAttribute("data-id");
-            const selectedCourse = courses.find (c => `${c.subject}-${c.number}` === courseId);
-            if (selectedCourse) {
-                displayCourseDetails(selectedCourse);
+            const courseId = card.getAttribute("data-id");
+
+           if (courseId) {
+            const [subject, number] = courseId.split('-');
+            const selectedCourse = filteredCourses.find(course => course.subject === subject && course.number === parseInt(number));
+
+                if (selectedCourse) {
+                    displayCourseDetails(selectedCourse);
+                } else {
+                    console.error("Selected course nto found for ID:", courseID);
+                }
             }
         });
     });
@@ -127,7 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function displayCourseDetails(course) {
-    courseDetails.innerHTML =`
+    courseDetails.innerHTML ='';
+    courseDetails.innerHTML = `
     <button id="closeModal">❌</button>
     <h2>${course.subject} ${course.number}</h2>
     <h3>${course.title}</h3>
@@ -140,7 +148,7 @@ function displayCourseDetails(course) {
  courseDetails.showModal();
 
  document.getElementById("closeModal").addEventListener("click", () => {
-    courseDetails.closest();
+    courseDetails.close();
  });
 
  courseDetails.addEventListener("click", (event) => {
