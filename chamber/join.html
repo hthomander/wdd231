@@ -33,17 +33,19 @@
     <main>
         <h1>Join the Heyburn Chamber of Commerce</h1>
         <form action="thankyou.html" method="get">
-            <label>First Name: <input type="text" name="firstName" required autocomplete="firstName" title="Enter your first name"></label>
-            <label>Last Name: <input type="text" name="lastName" required autocomplete="lastName" title="Enter your last name"></label>
+            <label>First Name: <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name"></label>
+            <label>Last Name: <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name"></label>
             <label>Email: <input type="email" name="email" required autocomplete="email" placeholder="example@mail.com" title="Enter a valid email"></label>
-            <label>Phone: <input type="phone" name="phone" required autocomplete="phone" title="Enter your phone number"></label>
-            <label>Business Name: <input type="text" name="businessName" required autocomplete="businessName" title="Enter the business name"></label>
+            <label>Phone: <input type="tel" name="phone" required autocomplete="phone" title="Enter your phone number"></label>
+            <label>Business Name: <input type="text" name="businessName" required autocomplete="organization" title="Enter the business name"></label>
 
-            <label>Membership Level:
+        
                 <select name="membership-level" required>
+                    <option value="" disabled selected>Select a membership level</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
+                    <option value="4">4</option>
                 </select>
             </label>
 
@@ -56,6 +58,7 @@
         </form>
 
         <section class="membership-cards">
+            <h2>Membership Levels</h2>
             <div class="membership-card" id="1">Level 1 <a href="#" data-modal="1modal">More Info</a></div>
             <div class="membership-card" id="2">Level 2 <a href="#" data-modal="2modal">More Info</a></div>
             <div class="membership-card" id="3">Level 3 <a href="#" data-modal="3modal">More Info</a></div>
@@ -68,7 +71,7 @@
                     <h2>Level 1 Benefits</h2>
                 </header>
                 <span class="close" data-close="1modal">&times;</span>
-            <p>Free and includes: access to networking events, listing in the Chamber directory,and monthly newsletter subscription</p>
+            <p>Free and includes: access to networking events, listing in the Chamber directory, and monthly newsletter subscription</p>
         </div>
     </div>
 
@@ -77,7 +80,7 @@
             <header class = "modal-header">
                 <h2>Level 2 Benefits--includes benefits from all previous levels</h2>
             </header>
-            <span class="close" data-close="2modal">&times</span>
+            <span class="close" data-close="2modal">&times;</span>
             <p>$100 annually and some benefits include: social media shoutouts, and discounted event booth fees</p>
         </div>
     </div>
@@ -87,7 +90,7 @@
             <header class = "modal-header">
                 <h2>Level 3 Benefits--includes benefits from all previous levels</h2>
             </header>
-            <span class="close" data-close="3modal">&times</span>
+            <span class="close" data-close="3modal">&times;</span>
         <p>$250 annually and some benefits include: monthly social media promotions, access to business development workshops, and exclusive sponsorship opportunities</p>
     </div>
   </div>
@@ -97,7 +100,7 @@
         <header class = "modal-header">
             <h2>Level 4 Benefits--includes benefits from all previous levels</h2>
         </header>
-        <span class="close" data-close="4modal">&times</span>
+        <span class="close" data-close="4modal">&times;</span>
         <p>$500 annually and some benefits include: free access to Chamber-hosted events, VIP invitations to networking mixers, and advertising opportunities in Chamber publications.</p>
     </div>
   </div>
