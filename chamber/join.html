@@ -39,17 +39,18 @@
         <form action="thankyou.html" method="get">
             <label>First Name: <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name"></label>
             <label>Last Name: <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name"></label>
+            <label for="organizationTitle">Organization Title: <input type="text" id="organizationTitle" name="organizationTitle" required autocomplete="organization-title" pattern="[A-Za\s\-]{7,}" title="Title must be at least 7 characters long and only contain letters, spaces, and hyphens."> </label>
             <label>Email: <input type="email" name="email" required autocomplete="email" placeholder="example@mail.com" title="Enter a valid email"></label>
             <label>Phone: <input type="tel" name="phone" required autocomplete="tel" title="Enter your phone number"></label>
             <label>Business Name: <input type="text" name="businessName" required autocomplete="organization" title="Enter the business name"></label>
 
-            <label>Memberhip Levels</label>
+            <label>Membership Levels</label>
                 <select name="membership-level" required>
                     <option value="" disabled selected>Select a membership level</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="NP">NP</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
                 </select>
 
             <label>Business Description:
@@ -62,48 +63,48 @@
 
         <section class="membership-cards">
             <h2>Membership Levels</h2>
-            <div class="membership-card" id="1">Level 1 <a href="#" data-modal="1modal">More Info</a></div>
-            <div class="membership-card" id="2">Level 2 <a href="#" data-modal="2modal">More Info</a></div>
-            <div class="membership-card" id="3">Level 3 <a href="#" data-modal="3modal">More Info</a></div>
-            <div class="membership-card" id="4">Level 4<a href="#" data-modal="4modal">More Info</a></div>
+            <div class="membership-card" id="NP">NP <a href="#" data-modal="NPmodal">More Info</a></div>
+            <div class="membership-card" id="Bronze">Bronze <a href="#" data-modal="Bmodal">More Info</a></div>
+            <div class="membership-card" id="Silver">Silver <a href="#" data-modal="Smodal">More Info</a></div>
+            <div class="membership-card" id="Gold">Gold<a href="#" data-modal="Gmodal">More Info</a></div>
         </section>
 
-        <div id="1modal" class="modal">
+        <div id="NPmodal" class="modal">
             <div class="modal-content">
                 <header class = "modal-header">
-                    <h2>Level 1 Benefits</h2>
+                    <h2>Non Profit Benefits</h2>
                 </header>
-                <span class="close" data-close="1modal">&times;</span>
+                <span class="close" data-close="NPmodal">&times;</span>
             <p>Free and includes: access to networking events, listing in the Chamber directory, and monthly newsletter subscription</p>
         </div>
     </div>
 
-    <div id="2modal" class="modal">
+    <div id="Bmodal" class="modal">
         <div class="modal-content">
             <header class = "modal-header">
-                <h2>Level 2 Benefits--includes benefits from all previous levels</h2>
+                <h2>Bronze Benefits--includes benefits from all previous levels</h2>
             </header>
-            <span class="close" data-close="2modal">&times;</span>
+            <span class="close" data-close="Bmodal">&times;</span>
             <p>$100 annually and some benefits include: social media shoutouts, and discounted event booth fees</p>
         </div>
     </div>
 
-    <div id="3modal" class="modal">
+    <div id="Smodal" class="modal">
         <div class="modal-content">
             <header class = "modal-header">
-                <h2>Level 3 Benefits--includes benefits from all previous levels</h2>
+                <h2>Silver Benefits--includes benefits from all previous levels</h2>
             </header>
-            <span class="close" data-close="3modal">&times;</span>
+            <span class="close" data-close="Smodal">&times;</span>
         <p>$250 annually and some benefits include: monthly social media promotions, access to business development workshops, and exclusive sponsorship opportunities</p>
     </div>
   </div>
 
-  <div id="4modal" class="modal">
+  <div id="Gmodal" class="modal">
     <div class="modal-content">
         <header class = "modal-header">
-            <h2>Level 4 Benefits--includes benefits from all previous levels</h2>
+            <h2>Gold Benefits--includes benefits from all previous levels</h2>
         </header>
-        <span class="close" data-close="4modal">&times;</span>
+        <span class="close" data-close="Gmodal">&times;</span>
         <p>$500 annually and some benefits include: free access to Chamber-hosted events, VIP invitations to networking mixers, and advertising opportunities in Chamber publications.</p>
     </div>
   </div>
