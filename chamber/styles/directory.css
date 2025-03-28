@@ -16,6 +16,9 @@ header, footer {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+    text-align: center;
+}
 .logo-container {
     display: flex;
     align-items: center;
@@ -23,7 +26,7 @@ header, footer {
 
 .logo {
     width: 60px;
-    height: 60px;
+    height: auto;
     margin-right: 15px;
     object-fit: cover;
     border-radius: 50%;
@@ -63,6 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
+    text-decoration: underline;
     background-color: #004080;
     border-radius: 5px;
 }
@@ -97,15 +101,15 @@ nav ul li a:hover, nav ul li a.active {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #004080;
+    background-color: #E67E22;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .cta-button:hover {
-    background-color: #1A252F;
+    background-color: #d35400;
 }
 
 
@@ -228,7 +232,6 @@ spotlight-card a {
 }
 
 button {
-   
     background-color: #3498db;
     color: #ffff;
     border: none;
@@ -315,6 +318,120 @@ button:hover {
     color: #666;
 }
 
+.thank-you {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-summary {
+    text-align: left;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.form-summary p {
+    margin: 5px 0;
+}
+
+.membership-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.membership-card {
+    background: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.membership-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.membership-card h3 {
+    color: #2C3E50;
+    font-size: 20px;
+}
+
+.membership-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.membership-card a {
+    display: block;
+    margin-top: 10px;
+    color: #E67E22;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.membership-card a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
+
+.close:hover {
+    color: #ff000f;
+}
+
+.show-modal {
+    display: flex;
+}
 
 @media (max-width: 768px) {
     header {
