@@ -325,7 +325,7 @@ button:hover {
 form {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1rrem;
+    padding: 1rem;
     background: #dddddd;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
