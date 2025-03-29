@@ -1,7 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     const modalLinks = document.querySelectorAll("[data-modal]");
     const closeButtons = document.querySelectorAll("[data-close]");
+    const membershipCards = document.querySelectorAll(".membership-card");
 
+    membershipCards.forEach(card => {
+        card.addEventListener("click", event =>{
+            const modalId = card.querySelector("[data-modal]").getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add("show-modal");
+            }
+        });
+    });
+    
     modalLinks.forEach(link => {
         link.addEventListener("click", event => {
             event.preventDefault();
