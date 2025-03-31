@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>${attraction.description}</p>
                 <button class="learn-more">Learn More</button>
                 `;
+                
                 container.appendChild(card);
             });
         })
