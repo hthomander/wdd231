@@ -478,6 +478,62 @@ form input, form select, form textarea {
     display: flex;
 }
 
+.container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.attractions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto; 
+}
+
+.attraction-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.attraction-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover img {
+    transform: scale(1.08);
+}
+
+.attraction-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+attraction-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -516,5 +572,9 @@ form input, form select, form textarea {
 
     .spotlight-card {
         max-width: 100%;
+    }
+
+    .attractions {
+        grid-template-columns: 1fr;
     }
 }
