@@ -3,49 +3,49 @@
         "name": "Heyburn Riverside Park",
         "address": "1175 7th St, Heyburn, ID",
         "description": "A scenic park along the Snake River with walking trails, picnic areas, and boat access. Perfect for outdoor recreation and family outings.",
-        "image": "images/heyburn-riverside.jpg"
+        "image": "images/heyburn-riverside.webp"
     },
     {
         "name": "Snake River & Boat Launch",
         "address": "2100 21st St, Heyburn, ID",
         "description": "A great spot for fishing, kayaking, and boating. The river offers breathtaking views and a peaceful atmosphere for nature lovers.",
-        "image": "images/snakeriver-boat.jpg"
+        "image": "images/snakeriver-boat.webp"
     
     },
     {
         "name": "Minidoka National Wildlife Refuge",
         "address": "Off ID-24, Rupert, ID",
         "description": "A haven for bird watchers and wildlife enthusiasts, home to a variety of migratory birds, deer and other wildlife.",
-        "image": "images/minidoka-wildlife.jpg"
+        "image": "images/minidoka-wildlife.webp"
     },
     {
         "name": "Storybook Park",
         "address": "939 W 16th St, Burley, ID",
         "description": "A charming children's park with whimsical playground equipment, perfect for families with young kids.",
-        "image": "images/storybook-park.jpg"
+        "image": "images/storybook-park.webp"
     },
     {
         "name": "Pomerelle Mountain Resort",
         "address": "961 Howell Canyon Rd, Albion, ID",
         "description": "A fantastic ski and snowboard resort just a short drive from Heyburn. Enjoy winter sports or summer mountain biking and hiking.",
-        "image": "images/pomerelle-mountain.jpg"
+        "image": "images/pomerelle-mountain.webp"
     },
     {
         "name": "Cassia County Historical Museum",
         "address": "1459 Overland Ave, Burley, ID",
         "description": "Discover the history of Cassia County with exhibits on pioneers, Native American culture, and early settlers.",
-        "image": "images/cassia-county-historical.jpg"
+        "image": "images/cassia-county-historical.webp"
     },
     {
         "name": "Lake Walcott State Park",
         "address": "959 E Minidoka Dam, Rupert, ID",
         "description": "A beautiful state park with opportunities for fishing, boating, hiking, and camping, just a short drive from Heyburn.",
-        "image": "images/lake-walcott.jpg"
+        "image": "images/lake-walcott.webp"
     },
     {
         "name": "Spudman Triathlon Route",
         "address": "Various locations around Heyburn & Burley",
         "description": "A famous local triathlon event route where visitors can train, bike, swim, or run along the scenic Snake River course.",
-        "image": "images/spudman-route.jpg"
+        "image": "images/spudman-route.webp"
     }
     ]
