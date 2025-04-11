@@ -1,0 +1,41 @@
+[
+    {
+    "title": "Princeton Review", 
+    "description": "Guarantees better scores, and offers free PLSAT!",
+    "image": "images/princeton.jpg",
+    "link": "https://www.princetonreview.com/law/lsat-test-prep?ExDT=2&msclkid=4207c3bb2cc91821ec6ba44f6573d319&utm_source=bing&utm_medium=cpc&utm_campaign=%5BLSAT%5D%20Branded%20-%20United%20States&utm_term=%2Bprinceton%20%2Blsat&utm_content=LSAT%20Branded%20-%20General/"
+      },
+    {
+        "title": "Kaplan", 
+        "description": "Comprehensive test preparation course", 
+        "image": "images/kaplan.jpg",
+        "link": "https://www.kaptest.com/lsat?utm_source=bing&utm_medium=cpc&utm_campaign=KTP_SEM_MSA_LSAT_NB_Gen_ALL&utm_content=Class&&msclkid=17c793c128091ab8bea8f43561b3ddca&gclid=17c793c128091ab8bea8f43561b3ddca&gclsrc=3p.ds&gad_source=7/" 
+        },
+    {
+        "title": "Reddit Forum", 
+        "description": "Forums/communities are also useful. Here is one that shares flashcards, podcasts and video lectures.", 
+        "image": "images/reddit.jpg",
+        "link": "https://www.reddit.com/r/LSAT/comments/oo1rs3/the_best_lsat_prepstudy_options_a_guide/?rdt=52159/" 
+        },
+    {
+        "title": "LawHub", 
+        "description": "Full tests, Drill sets, Lessons, and additional practice available!", 
+        "image": "images/lawhub.jpg",
+        "link": "https://app.lawhub.org/library"
+        },
+        {
+            "title": "Udemy", 
+            "description": "Study at your own pace and improve your skills.", 
+            "image": "images/udemy.jpg",
+            "link": "https://www.udemy.com/topic/lsat/"
+            },
+            {
+                "title": "The Law School Admission Council", 
+                "description": "Study using the extensive library of previously used LSATs that LSAC has published in book form!", 
+                "image": "images/LSAC.png",
+                "link": "https://www.lsac.org/lsat/prep"
+                }
+    
+            
+
+]

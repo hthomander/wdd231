@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hazel Beth Thomander">
+    <meta name="description" content="Legal Prep Toolkit - Prep the way pros do.">
+    <meta property="og:title" content="Legal Prep Toolkit">
+    <meta property="og:description" content="Prep for the LSAT, Track your progress, and Find more resources!">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/projectIcon.jpg">
+    <title>Home | Legal Prep Toolkit</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/resources.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/projectIcon.jpg" alt="Legal Prep Toolkit Logo" id="logo" loading="lazy">
+            <h1>Legal Prep Toolkit</h1>
+        </div>
+        <nav> 
+            <button class="hamburger">☰</button>
+            <ul>
+           <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+           <li><a href="tracker.html">Tracker</a></li>
+           </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>☑️Ace the LSAT with the right tools!👩‍⚖️📚</h2>
+            <img src="images/hero.jpg" alt="LSAT Study Materials" id="hero-image" loading="lazy">
+            <h3>Start Studying Now!</h3>
+        </section>
+
+        <section id="daily-question">
+            <h2>⚖️Today's Legal Practice Question⚖️</h2>
+            <p id="dailyQuestion"></p>
+            <button id="newQuestion">Give me another!</button>
+        </section>
+
+            <section id="resource-link">
+           <h2>🧠Study Resources📚</h2>
+           <p>Check out recommended LSAT resources</p>
+           <a href="resources.html" id="resources" class="resource-link">Take me there now!</a>
+        </section>
+
+           <section id="featuredResource">
+            <h2>🌟 Featured Resource 🌟</h2>
+            <ul id="resourcesList"></ul>
+           </section>
+        
+            <section id="progress-tracker">
+            <h3>📈Progress Tracker📏</h3>
+            <ul id="progressList">
+            </ul>
+            </section>
+        
+    
+
+        <section id="newsletter">
+            <h3>Join our Newsletter🗞️</h3>
+            <form id="email-signup">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"> </span> Hazel Beth Thomander 🧠 | Legal Prep Toolkit ⚖️ | <a href="attributions.html">Attributions 📃</a></p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    <div id="modal" class="hidden" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <span id="close-modal" class="close-button">❌</span>
+            <h2>Thanks for Joining!</h2>
+            <p>You have successfully subscribed to the newsletter🗞️</p>
+        </div>
+    </div>
+
+</body>
+</html>

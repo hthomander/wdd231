@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your daily practice progress.">
+    <meta name="author" content="Hazel Beth Thomander">
+    <meta property="og:title" content="Legal Prep Toolkit">
+    <meta property="og:description" content="Prep for the LSAT, Track your progress, and Find more resources!">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/projectIcon.jpg">
+    <title>Tracker | Legal Prep Toolkit</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="scripts/tracker.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/projectIcon.jpg" alt="Legal Prep Toolkit Logo" id="logo">
+            <h1>Legal Prep Toolkit</h1>
+        </div>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul>
+           <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+           <li><a href="tracker.html" class="active">Tracker</a></li>
+           </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h2>☑️Track your progress, Stay consistent📈</h2>
+            <img src="images/hero.jpg" alt="LSAT Study Materials" id="hero-image">
+            <h1>Start Studying Now!</h1>
+        </section>
+
+
+        <h1>📏Track Your Progress!🧠</h1>
+        <form id="tracker-form">
+            <label for="entry"><strong>What did you practice today?</strong> (Logical Reasoning\Analytical Reasoning\Reading Comprehension\Writing\Experimental and\or Other)  <strong>For how long? Be descriptive about your efforts and resources used!</strong></label>
+            <input type="text" id="entry" required>
+            <button type="submit">Save Entry</button>
+        </form>
+
+        <div id="entries-list">
+            <h2>⚖️ What Have I Been Studying? 📈</h2>
+            <ul id="entries-list-ul">
+
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Hazel Beth Thomander 🧠 | Legal Prep Toolkit ⚖️ | <a href="attributions.html">Attributions 📃</a></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <h2>Great Work!💪</h2>
+            <p>Thank you for logging your practice!☑️</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+    
+</body>
+</html>
