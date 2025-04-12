@@ -1,10 +1,12 @@
+import { getCurrentYear } from "./utils.js";
+
+
 document.addEventListener('DOMContentLoaded', function () {
 const yearSpan = document.getElementById('year');
 const lastModified = document.getElementById('lastModified');
 const menuToggle = document.querySelector('.hamburger');
 const menu = document.querySelector('nav ul');
 const form = document.getElementById('tracker-form');
-const entriesList = document.getElementById('entries-list');
 const modal = document.getElementById('modal');
 const closemodal = document.getElementById('close-modal');
 

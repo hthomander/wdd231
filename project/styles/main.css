@@ -45,13 +45,17 @@ header nav {
     gap: 1rem;
     background: var(--primary-color);
     padding: 1rem;
+
 }
 
-nav a {
+nav a, ul {
     width: 100%;
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 2rem;
 }
 
 nav a:hover {

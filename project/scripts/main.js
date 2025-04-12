@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 const yearSpan = document.getElementById('year');
 const lastModified = document.getElementById('lastModified');
-const menuToggle = document.querySelector('.hamburger');
-const menu = document.querySelector('nav ul');
+
 
 
 
@@ -10,10 +9,6 @@ yearSpan.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
 
-menuToggle.addEventListener("click", function () {
-    menu.classList.toggle("show");
-    
-});
 
 
 async function fetchQuestions() {
